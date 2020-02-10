@@ -1,0 +1,29 @@
+
+
+.employees {
+    align-content: center;
+    border: 1px solid #dabbbb;
+    margin-left:auto; margin-right:auto; 
+}
+table th {
+    border-bottom: 1px solid green;
+}
+table td {
+    height:20px;
+    // color: #2196f3;
+}
+
+
+button {
+    cursor: pointer;
+    height: 18px;
+    font-size: 11px;
+    color: #504a4a;
+}
+
+
+button:hover {
+    background-color: #2196F3;
+    color: white;
+    border-color: #2196F3;
+}

@@ -1,0 +1,46 @@
+<div>
+    <h3>List Of Employees</h3>
+    <table class="employees">
+
+        <tr>
+            <th>Employee Id</th>
+            <th>Name</th>
+            <th>Email Id</th>
+            <th>Manage</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> <input [(ngModel)]="newEmp.empName" placeholder="Type to add new entry.." /> </td>
+            <td> <input [(ngModel)]="newEmp.emailId" /> </td>
+            <td> <button *ngIf="newEmp.empName" class="add-button" (click)="addEmployee()"> AddNew </button> </td>
+            <!-- <td>
+            <button [routerLink]="['/home/tracker']">
+                Total Hours
+            </button> 
+        </td> -->
+
+        </tr>
+        <tr *ngFor="let emp of empList">
+            <td>
+                <span class="empid" [routerLink]="['/home/tracker/'+  emp.empId ]">
+                    {{  emp.empId  }}
+                </span>
+            </td>
+            <td> {{  emp.empName }} </td>
+            <td> {{  emp.emailId }} </td>
+            <td>
+                <button class="delete-button" (click)="removeEmployee( emp.empId )">
+                    X
+                </button>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <br>
+    <small><i>
+            *Click on employee id to mark employee's attendance</i></small>
+
+
+</div>

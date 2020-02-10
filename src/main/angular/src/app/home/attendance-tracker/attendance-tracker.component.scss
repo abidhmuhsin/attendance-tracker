@@ -1,0 +1,22 @@
+input {
+    height: 12px;
+    font-size: 11px;
+}
+button {
+    cursor: pointer;
+    height: 18px;
+    font-size: 11px;
+    color: #504a4a;
+}
+
+.delete-button:hover {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.get-button:hover {
+    background-color: #2196F3;
+    color: white;
+    border-color: #2196F3;
+}

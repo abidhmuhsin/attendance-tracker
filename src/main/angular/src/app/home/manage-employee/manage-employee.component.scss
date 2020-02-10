@@ -1,0 +1,48 @@
+.employees {
+    align-content: center;
+    border: 1px solid #dabbbb;
+    margin-left:auto; margin-right:auto; 
+}
+table th {
+    border-bottom: 1px solid green;
+}
+table td:nth-child(1) {
+    color:#2196f3;
+}
+table tr:nth-child(2) td {
+    padding: 5px 0px 10px;
+    margin-bottom:5px;
+}
+table td {
+    height:25px;
+    // color: #2196f3;
+}
+table input {
+    height: 12px;
+    font-size: 11px;
+}
+
+.empid:hover{
+    cursor: pointer;
+    color: #262325;
+    font-weight: bold;
+    font-style: italic;
+}
+button {
+    cursor: pointer;
+    height: 18px;
+    font-size: 11px;
+    color: #504a4a;
+}
+
+.delete-button:hover {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.add-button:hover {
+    background-color: #2196F3;
+    color: white;
+    border-color: #2196F3;
+}

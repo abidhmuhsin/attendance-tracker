@@ -1,0 +1,37 @@
+
+<div>
+    <h3>Employee Attendance</h3>
+ <input [(ngModel)]="empId" placeholder="Enter Employee ID"/>
+ <button class="get-button" (click)="getDetails()">  GetDetails  </button> 
+
+ <div>
+<br>
+Total Office Hours till last swipe OUT :<b> {{officeHoursSpent}}</b>
+<br>
+Is Employe inside office now : <b>{{isEmployeePresentInside}}</b>
+</div>
+
+<hr>
+<br>
+<div>
+    <h3>Update Todays Attendance</h3>
+    Enter IN Time  
+    <input 
+     #entryTime placeholder="HH:MM:SS"
+     style="height: 18px;"/>
+    
+     <br><button class="get-button" (click)="updateEntryTime(entryTime.value)">  Update IN  </button> 
+     <br>
+    <br>
+    Enter OUT Time 
+    <input
+    #exitTime placeholder="HH:MM:SS"
+    style="height: 18px;"/>    
+    <br><button class="get-button" (click)="updateExitTime(exitTime.value)">   Update OUT  </button> 
+
+    <br>
+    <br>
+    <!-- <small>Office Hours are between 8am to 8pm</small> -->
+</div>
+
+</div>
