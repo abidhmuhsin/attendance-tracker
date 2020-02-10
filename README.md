@@ -1,9 +1,10 @@
 # Employee Management & Attendance Tracker
 
 ## attendance-tracker
-## Java Spring JPA-REST Angular
+## Java Spring Boot JPA-WEB + Angular
 
-## Technologies Used- Spring Boot latest version 
+## Technologies Used
+- Spring Boot latest version 
 - Spring Boot Web Rest Services [ uses Embedded Tomcat]
 - Spring JPA [uses JPARepository]
 - Maven for build
